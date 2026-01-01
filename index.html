@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kushal Creation</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0; padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); /* Classic cinematic gradient */
+  background-attachment: fixed; /* For a subtle parallax effect */
+  color:#f5f5f5; /* Light text for contrast */
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1489599735734-79b4b9b1b0b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Cinematic background: Old film theater (replace with your own if needed) */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* Subtle overlay for cinematic depth */
+  z-index: -1;
+}
+
+/* Header */
+header{
+  background: linear-gradient(90deg, #2c3e50 0%, #34495e 100%); /* Classic dark gradient */
+  padding:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.5);
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom: 2px solid #ffcc00;
+}
+
+header h1{
+  font-size:28px;
+  color:#ffcc00;
+  font-weight:700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Cinematic shadow */
+}
+
+/* Sections */
+section{
+  padding:70px 10%;
+  transition:0.4s;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay for readability */
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* Cinematic depth */
+}
+
+section h2{
+  font-size:32px;
+  margin-bottom:20px;
+  color:#ffcc00;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Specific Section Backgrounds for Cinematic Feel */
+#home {
+  background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Spotlight on stage (cinematic) */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+#about {
+  background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Vintage library (classic) */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+#social {
+  background-image: url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Film reel (cinematic) */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+#ebooks, #contact {
+  background: rgba(0, 0, 0, 0.4); /* Subtle for coming soon sections */
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  background: linear-gradient(45deg, #ffcc00, #ffb347); /* Classic gold gradient */
+  color:#000;
+  padding:12px 25px;
+  margin-top:20px;
+  font-weight:600;
+  border-radius:8px;
+  box-shadow:0px 6px 14px rgba(0,0,0,0.3);
+  transition:0.3s;
+  text-decoration:none;
+  border: 2px solid #fff;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0px 10px 20px rgba(0,0,0,0.4);
+  background: linear-gradient(45deg, #ffb347, #ffcc00);
+}
+
+/* Social Icons Container */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons i{
+  font-size:32px;
+  margin:15px;
+  padding:12px;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0px 4px 12px rgba(0,0,0,0.3);
+  transition:.3s;
+  color:#000;
+}
+
+.social-icons i:hover{
+  transform:scale(1.1);
+  box-shadow:0px 6px 14px rgba(0,0,0,0.4);
+}
+
+/* Brand Colors */
+.youtube   { color:#FF0000; }
+.facebook  { color:#1877F2; }
+.instagram { color:#C13584; }
+.tiktok    { color:#000000; }
+.coming    { opacity:0.6; }
+
+/* Footer */
+footer{
+  background: linear-gradient(90deg, #34495e 0%, #2c3e50 100%); /* Matching header gradient */
+  padding:25px;
+  text-align:center;
+  font-weight:500;
+  margin-top:30px;
+  border-top:3px solid #ffcc00;
+  color:#f5f5f5;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Kushal Creation</h1>
+</header>
+
+<!-- Home -->
+<section id="home">
+  <h2>Welcome!</h2>
+  <p>Sharing Tech & Knowledge</p>
+
+  <a class="btn"
+     href="https://www.youtube.com/channel/UCDxTW1WFwfEwOBfy1-oAUNg"
+     target="_blank">
+     Visit YouTube
+  </a>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Kushal Creation is a platform where I share tech, learning, and useful knowledge to help others grow.</p>
+</section>
+
+<!-- Social -->
+<section id="social">
+  <h2>Social Media</h2>
+  
+  <div class="social-icons">
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/channel/UCDxTW1WFwfEwOBfy1-oAUNg" target="_blank">
+      <i class="fab fa-youtube youtube"></i>
+    </a>
+
+    <!-- Facebook -->
+    <span class="coming" title="Coming Soon">
+      <i class="fab fa-facebook facebook"></i>
+    </span>
+
+    <!-- Instagram -->
+    <span class="coming" title="Coming Soon">
+      <i class="fab fa-instagram instagram"></i>
+    </span>
+
+    <!-- TikTok -->
+    <span class="coming" title="Coming Soon">
+      <i class="fab fa-tiktok tiktok"></i>
+    </span>
+
+  </div>
+</section>
+
+<!-- E-Books -->
+<section id="ebooks">
+  <h2>E-Books</h2>
+  <p>Coming Soon...</p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>If you have any message, please contact me through my social links above.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  Thank you for contacting us
+</footer>
+
+</body>
+</html>
